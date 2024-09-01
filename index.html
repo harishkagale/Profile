@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Harish Kagale</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		<div class="home-slider owl-carousel">
+		  <div class="slider-item">
+			<div class="overlay"></div>
+			<div class="container">
+			  <div class="row no-gutters slider-text align-items-center" style="display: flex; height: 100vh;">
+	  
+				<!-- Image Section - Place it first horizontally on the left -->
+				<div class="one-third js-fullheight img" style="background-image:url(images/bg_1.png); background-size: cover; background-position: center; height: 100vh; width: 40%;">
+				  <div class="overlay"></div>
+				</div>
+				
+				<!-- Text Section - Place it second horizontally on the right -->
+				<div class="one-forth d-flex align-items-center ftco-animate" style="width: 60%; padding: 40px; position: relative; z-index: 1;">
+				  <div class="text">
+					<span class="subheading">Hello!</span>
+					<h1 class="mb-4 mt-3" style="white-space: nowrap;">I'm <span>Harish Kagale</span></h1>
+		
+					<!-- Typing Animation -->
+					<span id="typing-animation"></span>
+					<script>
+					  const typingAnimationElement = document.getElementById('typing-animation');
+					  const typingTexts = ['SR. UNITY DEVELOPER     '];
+		
+					  function playTypingAnimation(text) {
+						for (let i = 0; i < text.length; i++) {
+						  setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+						  }, i * 100);
+						}
+		
+						setTimeout(() => {
+						  typingAnimationElement.textContent = '';
+						  playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 100);
+					  }
+		
+					  playTypingAnimation(typingTexts[0]);
+					</script>
+					<br><br>
+					<p style="display: flex; gap: 10px;">
+						<a href="https://www.linkedin.com/in/harish-kagale-83b37a52/" class="btn btn-primary py-3 px-4" style="flex: 1; min-width: 150px; text-align: center;">LinkedIn</a>
+					  </p>
+				  </div>
+				</div>
+	  
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  
+	  
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Harish Kaagle</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Senior Unity Developer</span></p>
+										<p><span class="title-s">Experience: </span> <span>12+ Years</span></p>
+										<p><span class="title-s">Address: </span> <span>Pune, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<h2 class="title-s font-weight-bold">Technical Skills</h2>
+									<div class="text-primary">
+									<div class= "title-s " > -   Programming Languages
+										<div class="options-grid">
+											<h6 class="options-item font-weight-bold&amp;">C#</h6>
+											<h6 class="options-item font-weight-bold&amp;">Android</h6>
+											<h6 class="options-item font-weight-bold&amp;">iOS</h6>
+											<h6 class="options-item font-weight-bold &amp;">C++</h6>
+											<h6 class="options-item font-weight-bold &amp;">C</h6>
+										</div>
+									</div>
+									<div class="text-primary">
+									<div class= "title-s "> -   Game Engines and IDEs
+										<div class="options-grid">
+											<h6 class="options-item font-weight-bold&amp;">Unity</h6>
+											<h6 class="options-item font-weight-bold&amp;">Android Studio</h6>
+											<h6 class="options-item font-weight-bold&amp;">Xcode</h6>
+											<h6 class="options-item font-weight-bold&amp;">Visual Studio code</h6>
+											<h6 class="options-item font-weight-bold&amp;">MonoDevelop</h6>
+										</div>
+									</div>
+									</div>
+									<div class="text-primary">
+										<div class= "title-s "> -   SDKs and APIs
+											<div class="options-grid">
+												<h6 class="options-item font-weight-bold&amp;">Photon (Multiplayer)</h6>
+												<h6 class="options-item font-weight-bold&amp;">ADS Plugins</h6>
+												<h6 class="options-item font-weight-bold&amp;">IAP Plugins</h6>
+												<h6 class="options-item font-weight-bold&amp;">Social Features</h6>
+												<h6 class="options-item font-weight-bold&amp;">Firebase Plugins</h6>
+											</div>
+										</div>
+									</div>
+									<div class="text-primary">
+										<div class= "title-s "> -   Version Control & Tools
+											<div class="options-grid">
+												<h6 class="options-item font-weight-bold&amp;">Git</h6>
+												<h6 class="options-item font-weight-bold&amp;">Source Tree</h6>
+												<h6 class="options-item font-weight-bold&amp;">Svn</h6>
+											</div>
+										</div>
+									</div>
+									<div class="text-primary">
+										<div class= "title-s "> -   Design Patterns
+											<div class="options-grid">
+												<h6 class="options-item font-weight-bold&amp;">Game Loop</h6>
+												<h6 class="options-item font-weight-bold&amp;">Singleton</h6>
+												<h6 class="options-item font-weight-bold&amp;">Factory Method</h6>
+												<h6 class="options-item font-weight-bold&amp;">State</h6>
+												<h6 class="options-item font-weight-bold&amp;">Command</h6>
+												<h6 class="options-item font-weight-bold&amp;">Observer</h6>
+												<h6 class="options-item font-weight-bold&amp;">Stratergy</h6>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+		
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>With over 12+ years of focused industry experience and the proper foundation. Proud team player on the job.
+									My professional skills such as Unity,C#, Java, C++, Prolog are backed by solid interpersonal skills to ensure my fast adaptation in any
+									environment.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Game Developer</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Mobile Gaming</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi, Marathi, Kannada</span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Cloud, Excel, Git, JIRA, Google Analytics</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Gaming</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="15">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/harish-kagale-83b37a52/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+
+		<div class="row">
+			<h1 class="big-4">Resume</h1>
+		</div>
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<p>Seasoned Game Developer with 12+ years of experience. Proven expertise in writing robust code for high level development having confident command over Unity3D, C#, C++. Skilled in AI,Gameplay and UI Programming, Build size Optimization and Performance Optimization.</p>
+          </div>
+        </div>
+		
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2022 - Present</span>
+						<h2>Senior Unity Developer</h2>
+						<span class="position">Games2win India Private Limited</span>
+						<p class="mt-4">Games2win, a largest casual mobile gaming company located in India. 
+							<ul>
+								<li>Designed and developed a new game feature that increased user
+									engagement by 30% and resulted in a increase in revenue within
+									the first month of release.</li>
+								<li>Collaborated with the art team to optimize game performance and
+									stability, resulting in a 15% reduction in load times and a 20% increase
+									in frame rate.</li>
+								<li>Refactoring code to optimise the code performance.</li>
+								<li>Mentored and trained junior developers for best practices for coding, resulting
+									in a 30% improvement in code.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2012-2022</span>
+						<h2>Senior Unity Developer</h2>
+						<span class="position">Appon Software Private Limited</span>
+						<p class="mt-4">Appon Software is a company specializing in producing mobile games for the global mobile market located in India. 
+							<ul>
+								<li>Key member in setting up the cross platform development production
+									team with Unity Game Engine.</li>
+								<li>Developed AAA quality games from conception to final delivery.</li>
+								<li>Mentored developers in various technology adaptation for
+									continuous learning and development.</li>
+								<li>Application/Game development for various mobile handsets
+									in the market in native platforms Android ,iOS and j2me.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2011 - 2012</span>
+    					<h2>Post Graduate Diploma (C-DAC)</h2>
+    					<span class="position">Sunbeam Institute of Technology </span>
+    					<p class="mt-4">Grade: First class.</p>
+    				</div>
+    			</div>
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2007-2010</span>
+    					<h2>Bachelor of Engineering (E&C)</h2>
+    					<span class="position">Visvesvaraya Technological University</span>
+    					<p class="mt-4">Grade: First class.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2004-2007</span>
+    					<h2>Diploma (E&C)</h2>
+    					<span class="position">Karnataka Board Of Technical Education</span>
+    					<p class="mt-4">Grade: First class.</p>
+    				</div>
+				</div>
+    		</div>    
+    	</div>
+    </section>
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are few sample games developed by me.</p>
+			<div class="underline"></div>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://play.google.com/store/apps/details?id=com.appon.supermarket" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+				<h3 class="heading"><a href="https://play.google.com/store/apps/details?id=com.appon.supermarket">Supermarket City :Farming Game</a></h3>
+				<h6 class="title-s font-weight-bold ">RESPONSIBILITIES : Build complete game from scratch to Shipping</h6>
+                <p> Build Proto-type, Designed Complete game architecture, Gameplay programming ,UI programming, Social | REST API | Ads | IAP feature Integrations, Android, iOS, Level Design, Game Balancing, Shipped.</p>
+              </div> 
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://play.google.com/store/apps/details?id=com.appon.kitchenstory" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+				<div class="text mt-3 float-right d-block">
+					<h3 class="heading"><a href="https://play.google.com/store/apps/details?id=com.appon.kitchenstory">Kitchen Story: Food Fever Game</a></h3>
+					<h6 class="title-s font-weight-bold ">RESPONSIBILITIES : Build complete game from scratch to Shipping</h6>
+					<p> Build Proto-type, Designed Complete game architecture, Gameplay programming ,UI programming, Social | REST API | Ads | IAP feature Integrations, Android, iOS, Level Design, Game Balancing, Shipped.</p>
+				  </div> 
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://play.google.com/store/apps/details?id=com.appon.carrom" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+				<div class="text mt-3 float-right d-block">
+					<h3 class="heading"><a href="https://play.google.com/store/apps/details?id=com.appon.carrom">World of Carrom</a></h3>
+					<h6 class="title-s font-weight-bold ">RESPONSIBILITIES : Lead Development Team </h6>
+					<p> Build Proto-type, Lead development team , Photon Multiplayer Imlementation ,Live ops implementations, Gameplay programming ,UI programming, Android, iOS, Level Design, Game Balancing, Shipped.</p>
+				  </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://play.google.com/store/apps/details?id=com.games2win.weddingdressup" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				    <div class="text mt-3 float-right d-block">
+						<h3 class="heading"><a href="https://play.google.com/store/apps/details?id=com.games2win.weddingdressup">Super Wedding Fashion Stylist</a></h3>
+						<h6 class="title-s font-weight-bold ">RESPONSIBILITIES :Mentor junior members and work on optimization</h6>
+						<p>Live-Ops implementations, Adding new features, Build size optimization,Performance Optimization,Code Refactoring and code optimization .</p>
+					  </div> 
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://play.google.com/store/apps/details?id=com.games2win.drivingacademy" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  				    <div class="text mt-3 float-right d-block">
+						<h3 class="heading"><a href="https://play.google.com/store/apps/details?id=com.games2win.drivingacademy">Driving Academy Car Simulator</a></h3>
+						<h6 class="title-s font-weight-bold ">RESPONSIBILITIES :Mentor junior members and work on optimization</h6>
+						<p>Live-Ops implementations, Adding new features, Build size optimization,Performance Optimization,Code Refactoring and code optimization .</p>
+					  </div> 
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>Passionate<span> Problem-Solver  </span> </h2>
+						<div class="heading"> <h4> I thrive on tackling challenges in game development, finding innovative solutions, and pushing the boundaries of what's possible. Every problem is an opportunity to create something extraordinary. </h4>
+						<br>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Pune, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://917276117995">+ 91 7276117995</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:harishkagale111@gmail.com">harishkagale111@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<a href="https://www.linkedin.com/in/harish-kagale-83b37a52/" class="btn btn-primary py-3 px-4" style="flex: 1; min-width: 150px; text-align: center;">LinkedIn</a>
+	          </div>
+          </div>
+
+		 
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Resume is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
